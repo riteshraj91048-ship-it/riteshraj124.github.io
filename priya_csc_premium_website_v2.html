@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="PRIYA COMMON SERVICE CENTRE Mahammadpur Manjhi Saran">
+<title>PRIYA CSC CENTRE | Premium Digital Services</title>
+<style>
+:root{--nav:#061426;--nav2:#0b2744;--cyan:#00e5ff;--gold:#ffd34e;--green:#20d76a;--bg:#f4f8fc;--ink:#102238;--muted:#68798d;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Arial,"Noto Sans Devanagari",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+header{position:sticky;top:0;z-index:100;background:#061426ee;backdrop-filter:blur(14px);border-bottom:1px solid #ffffff18}
+.nav{max-width:1200px;margin:auto;padding:12px 18px;display:flex;align-items:center;justify-content:space-between;gap:15px}
+.brand{color:#fff;font-size:18px;font-weight:900}.brand span{color:var(--cyan)}
+nav a{color:#dcecff;text-decoration:none;margin:0 8px;font-size:13px;font-weight:800}
+nav a:hover{color:var(--gold)}
+.lang{border:1px solid #ffffff33;background:#ffffff10;color:#fff;border-radius:20px;padding:7px 10px;cursor:pointer}
+.hero{min-height:690px;color:#fff;display:grid;place-items:center;text-align:center;padding:70px 18px;position:relative;overflow:hidden;background:radial-gradient(circle at 15% 15%,#006486,transparent 32%),radial-gradient(circle at 85% 70%,#233f83,transparent 38%),linear-gradient(135deg,#020711,#08213b)}
+.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(#00e5ff12 1px,transparent 1px),linear-gradient(90deg,#00e5ff12 1px,transparent 1px);background-size:42px 42px;animation:grid 14s linear infinite}
+@keyframes grid{to{background-position:42px 42px}}
+.hero-inner{position:relative;max-width:980px}
+.logo{width:112px;height:112px;margin:0 auto 18px;border-radius:50%;display:grid;place-items:center;border:3px solid var(--cyan);background:radial-gradient(circle,#123d62,#03111f);box-shadow:0 0 35px #00e5ff55, inset 0 0 25px #00e5ff22;font-weight:900;color:var(--gold);font-size:17px}
+.badge{display:inline-block;padding:7px 14px;border:1px solid #00e5ff66;border-radius:99px;color:var(--cyan);background:#00e5ff0d;font-weight:800}
+h1{font-size:clamp(34px,7vw,70px);line-height:1.02;margin:18px 0;text-shadow:0 0 30px #00e5ff44}
+.hero h2{color:var(--gold);font-size:clamp(18px,3vw,29px)}
+.hero p{color:#dceafa;max-width:820px;margin:15px auto;font-size:18px}
+.buttons{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:25px}
+.btn{display:inline-block;padding:12px 20px;border-radius:999px;text-decoration:none;font-weight:900;background:var(--cyan);color:#00111c;box-shadow:0 8px 25px #00e5ff35;cursor:pointer;border:0}
+.btn.green{background:var(--green);color:#04130a}.btn.gold{background:var(--gold);color:#221900}.btn.dark{background:#ffffff12;color:#fff;border:1px solid #ffffff35}
+section{padding:68px 18px}.wrap{max-width:1150px;margin:auto}.title{text-align:center;margin-bottom:34px}.title h2{font-size:36px;color:#08203a}.title p{color:var(--muted)}
+.darksec{background:var(--nav);color:#fff}.darksec .title h2{color:#fff}.darksec .title p{color:#b8c9db}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:17px}
+.card{background:#fff;border:1px solid #e3eaf2;border-radius:20px;padding:23px;box-shadow:0 9px 28px #102b4510;transition:.25s}
+.card:hover{transform:translateY(-6px);box-shadow:0 17px 35px #102b4520}
+.icon{font-size:37px}.card h3{margin:8px 0 5px;color:#0a3155}.card p{color:#69798c;font-size:14px}
+.search{max-width:650px;margin:0 auto 25px;display:flex;gap:8px}.search input{flex:1;padding:14px 17px;border-radius:30px;border:1px solid #d8e2ec;outline:none;font-size:15px}
+.notice{background:linear-gradient(90deg,#fff7d6,#fff);border-left:5px solid var(--gold);padding:16px 20px;border-radius:12px;margin-bottom:30px;text-align:center}
+.notice b{color:#8a6100}
+.offer{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}.offer .card{background:linear-gradient(145deg,#071a30,#0d3151);color:#fff;border-color:#ffffff16}.offer h3{color:var(--gold)}.offer p{color:#c9d8e8}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:stretch}
+.panel{background:#fff;padding:30px;border-radius:22px;box-shadow:0 10px 30px #102b4510}
+.panel h3{color:#0a3155;margin-bottom:12px;font-size:25px}
+.steps{display:grid;gap:12px}.step{padding:15px;border-radius:14px;background:#f3f8fc}.step b{color:#0a3155}
+.shayari{max-width:850px;margin:auto;text-align:center;padding:32px;border:1px solid #00e5ff2e;border-radius:25px;background:#00e5ff08}
+.shayari strong{color:var(--gold);font-size:23px}.shayari p{font-size:20px;margin-top:9px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}.photo{min-height:180px;border-radius:18px;background:linear-gradient(135deg,#0b2d4c,#13a4b8);display:grid;place-items:center;color:#fff;text-align:center;padding:20px;font-weight:800;box-shadow:0 8px 25px #102b4514}
+.mapbox{background:#e9f4fb;border:2px dashed #9bc6df;border-radius:20px;min-height:250px;display:grid;place-items:center;text-align:center;padding:25px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:22px}.contactbox{background:#fff;padding:30px;border-radius:22px;box-shadow:0 10px 30px #102b4510}.info{margin:12px 0}.info b{color:#0a3155}
+footer{background:#020a13;color:#b9c8d8;text-align:center;padding:30px 15px}footer b{color:var(--gold)}
+.float{position:fixed;right:17px;bottom:18px;z-index:90;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;text-decoration:none;color:#fff;font-size:24px;box-shadow:0 8px 25px #0004}.wa{background:#20d76a}.call{right:84px;background:#087df2}
+.hidden{display:none!important}
+@media(max-width:760px){nav{display:none}.about,.contact{grid-template-columns:1fr}.hero{min-height:630px}.hero p{font-size:16px}.search{flex-direction:column}.search .btn{width:100%}section{padding:52px 15px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="nav">
+<div class="brand">PRIYA <span>CSC CENTRE</span></div>
+<nav><a href="#home">HOME</a><a href="#services">SERVICES</a><a href="#offers">OFFERS</a><a href="#about">ABOUT</a><a href="#gallery">GALLERY</a><a href="#contact">CONTACT</a></nav>
+<button class="lang" onclick="toggleLang()">हिंदी / EN</button>
+</div>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="hero-inner">
+<div class="logo">PRIYA<br>CSC</div>
+<span class="badge">DIGITAL • ONLINE • CSC SERVICES</span>
+<h1>PRIYA COMMON<br>SERVICE CENTRE</h1>
+<h2>महम्मदपुर • मांझी • सारण • बिहार</h2>
+<p id="heroText">आपकी विभिन्न डिजिटल, ऑनलाइन, शैक्षणिक और दस्तावेज़ संबंधी सेवाओं के लिए एक सुविधाजनक सेवा केंद्र।</p>
+<p><b>Computer Operator: Ritesh Raj</b> | 📱 9102620023</p>
+<div class="buttons">
+<a class="btn" href="tel:9102620023">📞 अभी कॉल करें</a>
+<a class="btn green" href="https://wa.me/919102620023?text=Namaste%20Priya%20Common%20Service%20Centre%2C%20mujhe%20online%20service%20ki%20jankari%20chahiye.">💬 WhatsApp</a>
+<a class="btn dark" href="#services">⚡ सेवाएँ देखें</a>
+</div>
+</div>
+</section>
+
+<section id="services">
+<div class="wrap">
+<div class="title"><h2>सभी प्रमुख सेवाएँ</h2><p>Service search करके अपनी जरूरत की सेवा देखें</p></div>
+<div class="search"><input id="serviceSearch" onkeyup="filterServices()" placeholder="🔎 Service खोजें..."><button class="btn" onclick="filterServices()">Search</button></div>
+<div class="grid" id="serviceGrid">
+<div class="card service" data-name="pan pan card"><div class="icon">🪪</div><h3>PAN Card</h3><p>PAN से संबंधित आवेदन और ऑनलाइन सहायता।</p></div>
+<div class="card service" data-name="online form form"><div class="icon">📄</div><h3>Online Forms</h3><p>विभिन्न ऑनलाइन आवेदन फॉर्म भरने में सहायता।</p></div>
+<div class="card service" data-name="education admission exam scholarship"><div class="icon">🎓</div><h3>Education Services</h3><p>Admission, Exam Form, Scholarship आदि में सहायता।</p></div>
+<div class="card service" data-name="certificate caste income residence"><div class="icon">🏠</div><h3>Certificate Services</h3><p>जाति, आय, निवास आदि आवेदन में सहायता।</p></div>
+<div class="card service" data-name="print scan photocopy"><div class="icon">🖨️</div><h3>Print & Scan</h3><p>Printing, scanning, photocopy और document services।</p></div>
+<div class="card service" data-name="cyber cafe computer browsing"><div class="icon">💻</div><h3>Cyber Cafe</h3><p>Browsing, online work और digital assistance।</p></div>
+<div class="card service" data-name="photo document"><div class="icon">📸</div><h3>Photo & Document</h3><p>Photo तथा digital document तैयार करने में सहायता।</p></div>
+<div class="card service" data-name="digital government portal"><div class="icon">🌐</div><h3>Digital Services</h3><p>उपलब्ध सरकारी एवं digital portals की सहायता।</p></div>
+<div class="card service" data-name="bank banking financial"><div class="icon">🏦</div><h3>Banking Assistance</h3><p>उपलब्ध banking/financial services की जानकारी और सहायता।</p></div>
+<div class="card service" data-name="insurance"><div class="icon">🛡️</div><h3>Insurance Assistance</h3><p>उपलब्ध बीमा सेवाओं की जानकारी एवं आवेदन सहायता।</p></div>
+</div>
+</div>
+</section>
+
+<section id="offers" class="darksec">
+<div class="wrap">
+<div class="title"><h2>📢 Latest Offers & Notices</h2><p>यहाँ अपनी दुकान के वर्तमान offer/notice अपडेट करें</p></div>
+<div class="notice"><b>महत्वपूर्ण:</b> किसी भी योजना/सेवा की पात्रता, शुल्क और अंतिम तिथि संबंधित आधिकारिक पोर्टल से सत्यापित करें।</div>
+<div class="offer">
+<div class="card"><h3>🎓 Student Services</h3><p>Admission, scholarship और exam form से जुड़ी ऑनलाइन सहायता।</p></div>
+<div class="card"><h3>🧾 Online Form</h3><p>विभिन्न ऑनलाइन आवेदन में document और form filling assistance।</p></div>
+<div class="card"><h3>🖨️ Digital Printing</h3><p>Print, scan, photocopy और digital document preparation।</p></div>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="wrap">
+<div class="title"><h2>हमारे बारे में</h2><p>PRIYA CSC CENTRE — Digital सेवा सहायता</p></div>
+<div class="about">
+<div class="panel"><h3>हमारी सोच</h3><p>महम्मदपुर, मांझी, सारण में नागरिकों को विभिन्न डिजिटल, ऑनलाइन, शैक्षणिक और दस्तावेज़ संबंधी सेवाओं में सुविधाजनक सहायता उपलब्ध कराना हमारा उद्देश्य है।</p><br><p><b>संचालक / Computer Operator:</b> Ritesh Raj</p><p><b>Mobile:</b> 9102620023</p></div>
+<div class="panel"><h3>सेवा लेने का आसान तरीका</h3><div class="steps"><div class="step"><b>1. संपर्क करें</b><br>Call या WhatsApp से सेवा पूछें।</div><div class="step"><b>2. Documents जानें</b><br>जरूरी दस्तावेज़ की जानकारी लें।</div><div class="step"><b>3. आवेदन सहायता</b><br>उपलब्ध online service के लिए सहायता लें।</div></div></div>
+</div>
+</div>
+</section>
+
+<section class="darksec">
+<div class="wrap">
+<div class="title"><h2>✨ Motivation Shayari ✨</h2><p>हमारा संदेश</p></div>
+<div class="shayari"><strong>“मेहनत की राह पर कदम बढ़ाते रहिए,<br>सपनों को हकीकत बनाते रहिए।”</strong><p>“काम आपका, प्रयास हमारा —<br>डिजिटल सेवा को आसान बनाना हमारा लक्ष्य है।”</p></div>
+</div>
+</section>
+
+<section id="gallery">
+<div class="wrap">
+<div class="title"><h2>📸 Gallery</h2><p>यहाँ अपनी दुकान और CSC centre की photos लगाएँ</p></div>
+<div class="gallery">
+<div class="photo">🏪<br>PRIYA CSC CENTRE<br>SHOP PHOTO</div>
+<div class="photo">💻<br>COMPUTER & DIGITAL<br>SERVICE AREA</div>
+<div class="photo">🖨️<br>PRINT / SCAN<br>SERVICE AREA</div>
+<div class="photo">👨‍💻<br>RITESH RAJ<br>COMPUTER OPERATOR</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+<div class="title"><h2>📍 Location</h2><p>Mahammadpur, Manjhi, Saran, Bihar</p></div>
+<div class="mapbox">
+<div><h3>PRIYA COMMON SERVICE CENTRE</h3><p>Mahammadpur, Manjhi, Saran, Bihar</p><br>
+<a class="btn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Priya+Common+Service+Centre+Mahammadpur+Manjhi+Saran+Bihar">🗺️ Google Maps पर खोजें</a></div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="wrap">
+<div class="title"><h2>संपर्क करें</h2><p>सेवा की जानकारी के लिए सीधे संपर्क करें</p></div>
+<div class="contact">
+<div class="contactbox"><h3>PRIYA COMMON SERVICE CENTRE</h3>
+<div class="info">📍 <b>पता:</b> Mahammadpur, Manjhi, Saran, Bihar</div>
+<div class="info">👨‍💻 <b>Computer Operator:</b> Ritesh Raj</div>
+<div class="info">📱 <b>Mobile:</b> 9102620023</div>
+<div class="buttons" style="justify-content:flex-start"><a class="btn" href="tel:9102620023">📞 Call</a><a class="btn green" href="https://wa.me/919102620023">💬 WhatsApp</a></div>
+</div>
+<div class="contactbox"><h3>📋 Service Request</h3><p>WhatsApp पर अपना काम लिखकर भेजें।</p><br><a class="btn green" href="https://wa.me/919102620023?text=Namaste%2C%20mujhe%20Priya%20CSC%20Centre%20se%20service%20leni%20hai.%20Meri%20service%3A%20">WhatsApp पर Request भेजें</a></div>
+</div>
+</div>
+</section>
+</main>
+
+<footer><p>© 2026 <b>PRIYA COMMON SERVICE CENTRE</b></p><p>Mahammadpur, Manjhi, Saran, Bihar | Ritesh Raj | 9102620023</p></footer>
+<a class="float call" href="tel:9102620023">📞</a><a class="float wa" href="https://wa.me/919102620023">💬</a>
+
+<script>
+function filterServices(){
+ const q=document.getElementById('serviceSearch').value.toLowerCase().trim();
+ document.querySelectorAll('.service').forEach(c=>{
+   c.classList.toggle('hidden',q && !c.dataset.name.includes(q));
+ });
+}
+function toggleLang(){
+ const p=document.getElementById('heroText');
+ if(p.dataset.en==='1'){
+   p.textContent='आपकी विभिन्न डिजिटल, ऑनलाइन, शैक्षणिक और दस्तावेज़ संबंधी सेवाओं के लिए एक सुविधाजनक सेवा केंद्र।';
+   p.dataset.en='0';
+ }else{
+   p.textContent='A convenient service centre for digital, online, education and document-related assistance.';
+   p.dataset.en='1';
+ }
+}
+</script>
+</body>
+</html>
